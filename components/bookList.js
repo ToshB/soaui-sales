@@ -1,11 +1,11 @@
 import {createFactory, createClass, DOM} from 'react';
 import {assign} from 'lodash';
-const {li, ul, p, div} = DOM;
+const {li, ul, a, div} = DOM;
 
 const bookListItem = createFactory(createClass({
   render() {
     return li({},
-      p({}, this.props.name)
+      a({href: this.props.link}, this.props.name)
     )
   }
 }));

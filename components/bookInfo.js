@@ -15,7 +15,7 @@ export const bookDetails = createFactory(createClass({
       p({}, `Name: ${this.props.name}`),
       p({}, `Edition: ${this.props.edition}`),
       p({}, `Author: ${this.props.author}`),
-      p({},
+      div({},
         'Tags',
         ul({}, this.props.tags.map((tag) => tagItem(assign({key: tag}, {tag: tag}))))
       )
