@@ -1,0 +1,28 @@
+{
+  "name": "@toshb/soaui-sales",
+  "version": "0.1.0",
+  "description": "Sales Service UI Component",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Torstein Bjørnstad (tosh@tosh.no)",
+  "license": "ISC",
+  "browserify": {
+    "transform": [
+      [
+        "babelify",
+        {
+          "presets": [
+            "es2015"
+          ]
+        }
+      ]
+    ]
+  },
+  "dependencies": {
+    "babelify": "^7.2.0",
+    "lodash": "^3.10.1",
+    "reqwest": "^2.0.5"
+  }
+}
